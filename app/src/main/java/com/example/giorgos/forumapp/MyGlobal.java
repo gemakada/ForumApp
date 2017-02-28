@@ -27,7 +27,7 @@ public class MyGlobal extends Application {
     private static String Username;
     private static String gpslatitude;
     private static String gpslongitude;
-    public static String ip = "192.168.2.9";
+    public static String ip = "192.168.2.9"; //it shared
     public static String to;
 
     public static String key;
