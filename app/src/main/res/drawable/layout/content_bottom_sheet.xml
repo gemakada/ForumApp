@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="40dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="136dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_venue_container" />
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+
+            android:text="National Bank of Greece (Εθνική Τράπεζα της Ελλάδος)"
+            android:textSize="16sp"
+            android:textColor="#7A2E1F"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/card_text"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textColor="#7A2E1F"
+            android:text="Evaggelistrias 54 streat"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_below="@+id/card_title"
+            android:layout_alignLeft="@+id/card_title"
+            android:layout_alignStart="@+id/card_title" />
+
+        <TextView
+            android:id="@+id/card_text3"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:textColor="#C67363"
+            android:text="Candy Store"
+            android:textSize="8sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_below="@+id/card_text"
+            android:layout_alignLeft="@+id/card_text"
+            android:layout_alignStart="@+id/card_text" />
+
+
+
+
+        <TextView
+            android:id="@+id/medium_volume"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:gravity="center"
+            android:text="9"
+            android:textColor="#FFFF"
+            android:textSize="20dp"
+
+            android:background="@drawable/circulat_text"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp" />
+    </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
